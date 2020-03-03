@@ -10,6 +10,7 @@ To run Selenium tests, Follow the cmd in Terminal:
 
 #### Project folder structure
 
+```
 .
 ├── Gemfile
 ├── Gemfile.lock
