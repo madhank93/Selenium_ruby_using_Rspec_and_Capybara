@@ -8,13 +8,13 @@ class Login < BaseClass
   end
 
   def login_with_invalid_username
-    @driver.fill_in(Locators::LOGIN_USERNAME, :with => "employee_61@sanitized.in")
+    @driver.fill_in(Locators::LOGIN_USERNAME, :with => "test@mail.in")
     @driver.fill_in(Locators::LOGIN_PASSWORD, :with => Credentials::PASSWORD)
     @driver.click_button(LOGIN)
   end
 
   def login_with_invalid_password
-    @driver.fill_in(Locators::LOGIN_USERNAME, :with => Credentials::EMPLOYEE_USERNAME_1)
+    @driver.fill_in(Locators::LOGIN_USERNAME, :with => Credentials::ADMIN_USERNAME)
     @driver.fill_in(Locators::LOGIN_PASSWORD, :with => "invalid")
     @driver.click_button(LOGIN)
   end
