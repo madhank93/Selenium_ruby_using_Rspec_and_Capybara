@@ -12,16 +12,16 @@ To run Selenium tests, Follow the cmd in Terminal:
 
 .
 +-- _browsers
-│   +-- chromedriver
-│   +-- geckodriver
+|   +-- chromedriver
+|   +-- geckodriver
 +-- _failures
-│   +-- failure_log.txt
+|   +-- failure_log.txt
 +-- _pages
-│   +-- login.rb
-│   +-- nav_bar.rb
+|   +-- login.rb
+|   +-- nav_bar.rb
 +-- _spec
-│   +-- login_spec.rb
-│   +-- 
+|   +-- login_spec.rb
+|   +-- 
 +-- Gemfile
 +-- Rakefile
 +-- base_class.rb
