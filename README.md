@@ -35,4 +35,4 @@ To run Selenium tests, Follow the cmd in Terminal:
 └── wait_for_ajax.rb
 ```
 
-[Page object model] (https://martinfowler.com/bliki/PageObject.html) and [Fluent Interface] (https://martinfowler.com/bliki/FluentInterface.html) are the test design pattern is used.
+[Page object model](https://martinfowler.com/bliki/PageObject.html) and [Fluent Interface](https://martinfowler.com/bliki/FluentInterface.html) are the test design pattern is used.
