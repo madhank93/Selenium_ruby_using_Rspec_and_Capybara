@@ -1,5 +1,6 @@
 require_relative '../base_class.rb'
 require_relative '../pages/login.rb'
+require_relative '../pages/user_management.rb'
 
 class NavBar < BaseClass
 
@@ -8,13 +9,11 @@ class NavBar < BaseClass
   end
 
 
-  def navigate_timeOff_page
-    begin
-        @driver.find(:xpath, Locators::LEFT_MENU_NAV_BAR).hover.find(:xpath, Locators::TIME_OFF).click
-    rescue
-        @driver.find(:xpath, Locators::TIME_OFF).click
-    end
-    Timeoff.new(@driver)
+  def navigate_user_management_page
+    @driver.find(:xpath, Locators::ADMIN).hover
+           .find(:xpath, Locators::USER_MANAGEMENT).hover
+           .find(:xpath, Locators::USERS).click
+    UserManagement.new(@driver)
   end
 
 end

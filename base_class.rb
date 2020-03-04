@@ -44,7 +44,7 @@ class BaseClass
   end
 
   def logout
-    sleep 5
+    wait_for_ajax
     @driver.find(:xpath, Locators::LOGOUT_DROPDOWN).click.find(:xpath, Locators::LOGOUT).click
   end
 

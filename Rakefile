@@ -10,7 +10,7 @@ task :default => :spec
 
 RSpec::Core::RakeTask.new(:spec) do |config|
   # config.pattern = "**/*_test.rb,**/*_spec.rb" # To run multiple files
-  config.pattern = "login_spec.rb"
+  config.pattern = "user_management_spec.rb"
   #config.rspec_opts = "--only-failures"
   config.verbose = false
   #config.rspec_opts = '--format progress' # To print the logs in console
