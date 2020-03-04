@@ -75,7 +75,7 @@ describe 'OrangeHRM - Login page' do
                       .visit
                       .login_page
      Forgot_pswd.navigate_forgot_pwd_page
-     expect(Forgot_pswd.text(Locators::FORGOT_TITLE)).to eq(Message::USERNAME_ERR_MSG)
+     expect(Forgot_pswd.text(Locators::FORGOT_TITLE)).to eq(Message::FORGOT_TITLE)
   end
 
 end

@@ -35,9 +35,4 @@ To run Selenium tests, Follow the cmd in Terminal:
 └── wait_for_ajax.rb
 ```
 
-
-Design pattern used is
-<ul>
-<li>Page object model</li>
-<li>Fluent / Chain of Invocations</li>
-</ul>
+[Page object model] (https://martinfowler.com/bliki/PageObject.html) and [Fluent Interface] (https://martinfowler.com/bliki/FluentInterface.html) are the test design pattern is used.

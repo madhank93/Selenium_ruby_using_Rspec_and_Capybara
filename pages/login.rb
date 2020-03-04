@@ -32,7 +32,7 @@ class Login < BaseClass
   end
 
   def login_with_no_pwd
-    @driver.fill_in(Locators::LOGIN_USERNAME, :with => Credentials::EMPLOYEE_USERNAME_1)
+    @driver.fill_in(Locators::LOGIN_USERNAME, :with => Credentials::ADMIN_USERNAME)
     @driver.fill_in(Locators::LOGIN_PASSWORD, :with => "")
     @driver.click_button(LOGIN)
   end
