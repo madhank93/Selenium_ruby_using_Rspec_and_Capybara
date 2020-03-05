@@ -8,12 +8,12 @@ describe 'OrangeHRM - User Management page' do
     Selenium::WebDriver::Chrome.driver_path= Dir.pwd + "/browsers/chromedriver"
   end
 
-  it 'Add an user' do
-      Performance =  @app
+  it 'Add an key performance indicator ' do
+      User_management =  @app
                   .visit
                   .login_as_admin
-                  .navigate_user_management_page
-      Performance.add_an_user
+                  .navigate_performance_KPI_page
+      User_management.add_a_KPI
   end
 
 end
